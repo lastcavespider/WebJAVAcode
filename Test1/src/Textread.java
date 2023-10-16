@@ -8,6 +8,7 @@ public class Textread {
         File fileNet = new File("D:\\javacodeidea\\Test1\\src\\webpath.txt");
         InputStream is = url.openStream();
         OutputStream os = new FileOutputStream(fileNet);
+        //创建数组存储字节
         byte[] buffer = new byte[1024];
         int lenth;
         //通过bufferedreader逐行读取
