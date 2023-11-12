@@ -16,7 +16,7 @@ public class MainServlet extends HttpServlet
 {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
     {
-        response.setContentType("text/html");
+
         try(Connection connection = DBTool.getDBConnection())
         {
             try(Statement statement = connection.createStatement())
@@ -36,14 +36,14 @@ public class MainServlet extends HttpServlet
                         String content = resultSet.getNString(5);
 
                         sb.append(String.format(
-                                "<tr><tb>%s</tb><tb>%s</tb><tb>%s</tb><tb>%s</tb><tb>%s</tb></tr>",
+                                "<tr><th>%s</th><th>%s</th><th>%s</th><th>%s</th><th>%s</th></tr>",
                                 id,name,author,price,content)
                         );
                     }
                     sb.append("</table>");
 
-                    response.setContentType("text/html");
 
+                    response.setContentType("text/html");
                     try(Writer writer =response.getWriter() )
                     {
                         writer.write(sb.toString());
