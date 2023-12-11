@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网上书城</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+    <div style="float:right"> <a href="./logout">退出系统 </a></div>
+    <center>
+        <h1 style="color:red">欢迎使用SWU网上书城</h1>
+        <hr/>
+        <form action="./addBook" method="post" enctype="multipart/form-data">
+            书名：<input type="text" name="name"><br><br>
+            作者：<input type="text" name="author"><br><br>
+            价格：<input type="text" name="price"><br><br>
+            内容：<textarea cols='20' rows='3' name="content"></textarea><br><br>
+            图片：<input type="file" name="picture"/> <br><br>
+            <input type="submit" value="提 交">
+        </form>
+    </center>
+</body></html>
