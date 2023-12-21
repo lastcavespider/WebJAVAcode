@@ -1,0 +1,30 @@
+.tb-book {
+    border-collapse:collapse;
+    border-spacing:0;
+    width:70%;
+    display:table
+}
+
+.tb-book th {
+    background-color: #336699;
+    color: #FFFFFF;
+    height: 40px;
+}
+
+.tb-book tr {
+    height: 40px;
+}
+
+.tb-book, th, td {
+    border: 1px solid black;
+    padding-left: 1em;
+}
+
+.pager {
+    line-height: 3em;
+}
+
+.book-pic {
+    width: 150px;
+    height: 150px;
+}
