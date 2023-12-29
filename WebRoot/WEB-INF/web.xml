@@ -10,7 +10,7 @@
         <filter-class>cn.edu.swu.gyh.security.AuthFilter</filter-class>
         <init-param>
             <param-name>ignoreUrls</param-name>
-            <param-value>index.html;admin.html;/books;/login;/code;.png;.svg;.jpg;.css;.js</param-value>
+            <param-value>index.html;admin.html;register.html;register_successful.html;delete.html;delete_successful.html;/books;/login;/code;/register;/delete;.png;.svg;.jpg;.css;.js</param-value>
         </init-param>
     </filter>
     <filter-mapping>

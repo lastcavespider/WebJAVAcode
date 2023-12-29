@@ -2,33 +2,77 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>网上书城</title>
 
+    <link rel="stylesheet" type="text/css" href="css/loginbox.css" />
+    
 </head>
 <body>
-    <br><br>
+    <div id="image" style="background-image: url(./image/backgroundimages/loginback.png);"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+    
     <center>
-        <h1>-- 欢迎访问网上书城 --</h1>
-        <br><br>
-        <div style="background-color:#eee;padding:3em">
+      
+<!--        <div style="background-color:#eee;padding:3em">-->
             <table>
                 <tr>
                     <td>
                         <center>
-                        <form action="./login" method="post">
-                            用&nbsp;&nbsp;&nbsp;户 : <input type="text" name="user" value="admin"> <br><br>
-                            密&nbsp;&nbsp;&nbsp;码 : <input type="password" name="pass" value="123456"> <br><br>
-                            验证码 : <input type="text" name="code" > <br><br>
-                            <input type="submit" value="登录系统">
-                        </form>
+<!--                        <form action="./login" method="post">-->
+<!--                            用&nbsp;&nbsp;&nbsp;户 : <input type="text" name="user" value="admin"> <br><br>-->
+<!--                            密&nbsp;&nbsp;&nbsp;码 : <input type="password" name="pass" value="123456"> <br><br>-->
+<!--                            验证码 : <input type="text" name="code" > <br><br>-->
+<!--                            <input type="submit" value="登录系统">-->
+<!--                        </form>-->
+                            <div class="login-box">
+                                <p>Login</p>
+                                <form action="./login" method="post">
+                                    <div class="user-box">
+                                        <input required="" name="user" type="text" value="admin">
+                                        <label>用户名</label>
+                                    </div>
+                                    <div class="user-box">
+                                        <input required="" name="pass" type="password" value="123456">
+                                        <label>密码</label>
+                                    </div>
+                                    <div class="user-box">
+                                        <input required="" name="code" type="text">
+                                        <label>验证码</label>
+                                    </div>
+
+                                        <img style="margin-left:60px" src="./code"/>
+
+                                    <a >
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <input class = "submit" type="submit" value="登录系统">
+                                    </a>
+
+
+
+
+
+
+                                </form>
+                                <p>Don't have an account? <a href="./register.html" class="a2">Sign up!</a>
+                                    <a href="./delete.html" class="a2">delete user</a>
+                                </p>
+
+
+                            </div>
                         </center>
                     </td>
-                    <td>
-                        <img style="margin-left:60px" src="./code"/>
-                    </td>
+<!--                    <td>-->
+<!--                        <img style="margin-left:60px" src="./code"/>-->
+<!--                    </td>-->
                 </tr>
             </table>
-        </div>
+        <!-- </div> -->
+        
     </center>
+
 </body>
 </html>

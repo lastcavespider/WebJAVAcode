@@ -1,0 +1,35 @@
+.tb-book {
+    width: 70%;
+    border-collapse: collapse;
+}
+
+.tb-book th {
+    background-color:#336699;
+    color: #ffffff;
+    height: 2.5em;
+    border: 1px solid black;
+}
+
+.tb-book tr {
+    height: 2.5em;
+
+}
+
+.tb-book td {
+    border: 1px solid black;
+    padding-left: 1em;
+}
+
+.footer {
+    font-size: 0.8em;
+    position: absolute;
+    bottom: 1em;
+    text-align: center;
+    width: 98%
+
+}
+
+.tb-book .book-pic {
+    width: 150px;
+    height: 150px;
+}

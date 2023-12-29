@@ -1,0 +1,22 @@
+a {
+  color: blue; /* 设置链接的颜色 */
+  text-decoration: none; /* 去除下划线 */
+  font-weight: bold; /* 设置链接字体为粗体 */
+  font-size: 16px;
+}
+
+a:link {
+  color:red;
+}
+
+a:visited {
+  color: brown;
+}
+
+a:hover {
+  color: coral;
+  font-weight: bold;
+  background-color:aqua;
+  text-decoration: underline; /* 鼠标悬停时添加下划线 */
+}
+

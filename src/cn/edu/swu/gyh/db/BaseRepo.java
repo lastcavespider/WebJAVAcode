@@ -25,7 +25,7 @@ public abstract class BaseRepo {
     protected BaseRepo() {
     }
 
-    public Connection getDBConnection() throws SQLException {
+    public static Connection getDBConnection() throws SQLException {
         return dataSource.getConnection();
     }
 

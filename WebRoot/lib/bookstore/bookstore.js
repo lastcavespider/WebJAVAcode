@@ -35,7 +35,8 @@ function updateBooksView(books){
                             <img src="" class="img-fluid img-center" style="height: 150px;" alt="Illustration" />
                         </div>
                         <h5 class="h4 lh-130 mb-3"></h5>
-                        <p class="text-muted mb-0"></p>
+                        <p class="text-muted mb-0 author-price"></p>
+                        <p class="text-muted mb-0 content"></p>
                     </div>
                 </div>
             </div>
@@ -44,7 +45,8 @@ function updateBooksView(books){
 
         div.find("img").attr("src","./image/upload/" + book.picture);
         div.find("h5").append(book.name);
-        div.find("p").append(book.content);
+        div.find("p.author-price").append("作者："+book.author+",价格：¥"+ book.price);
+        div.find("p.content").append(book.content);
         $("#booksView").append(div);
 
 

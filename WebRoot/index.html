@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Webpixels">
-    <title>Quick – Website UI Kit (FREE)</title>
+    <title>BookStore</title>
     <!-- Preloader -->
     <style>
         @keyframes hidePreloader {
@@ -56,10 +56,14 @@
         });
     </script>
     <!-- Favicon -->
-    <link rel="icon" href="assets/img/brand/favicon.png" type="image/png"><!-- Font Awesome -->
+    <link rel="icon" href="assets/img/brand/OIP.jpg" type="image/png"><!-- Font Awesome -->
     <link rel="stylesheet" href="assets/libs/@fortawesome/fontawesome-free/css/all.min.css">
     <!-- Quick CSS -->
     <link rel="stylesheet" href="assets/css/quick-website.css" id="stylesheet">
+<!--    logobookcss-->
+    <link rel="stylesheet" type="text/css" href="css/loaderindex.css" />
+
+
 </head>
 
 <body>
@@ -91,8 +95,28 @@
         <div class="container">
             <!-- Brand -->
             <a class="navbar-brand" href="index.html">
-                <img alt="Image placeholder" src="assets/img/brand/dark.svg" id="navbar-logo">
+                <div class="hourglassBackground">
+                    <div class="hourglassContainer">
+                        <div class="hourglassCurves"></div>
+                        <div class="hourglassCapTop"></div>
+                        <div class="hourglassGlassTop"></div>
+                        <div class="hourglassSand"></div>
+                        <div class="hourglassSandStream"></div>
+                        <div class="hourglassCapBottom"></div>
+                        <div class="hourglassGlass"></div>
+                    </div>
+                </div>
+<!--                <img alt="Image placeholder" src="assets/img/brand/dark.svg" id="navbar-logo">-->
+                <div class="loader">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
             </a>
+
             <!-- Toggler -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -121,7 +145,7 @@
                 <div class="col-12 col-md-5 col-lg-6 order-md-2 text-center">
                     <!-- Image -->
                     <figure class="w-100">
-                        <img alt="Image placeholder" src="assets/img/svg/illustrations/illustration-3.svg" class="img-fluid mw-md-120">
+                        <img alt="Image placeholder" src="assets/img/svg/illustrations/illustration-2.svg" class="img-fluid mw-md-120">
                     </figure>
                 </div>
                 <div class="col-12 col-md-7 col-lg-6 order-md-1 pr-md-5">
@@ -148,9 +172,25 @@
     <section class="slice slice-lg pt-lg-6 pb-0 pb-lg-6 bg-section-secondary">
         <div class="container">
 
+            <h1 class="display-4 text-center text-md-left mb-3">
+                <strong class="text-primary">书籍信息展示</strong>
+            </h1>
+
             <!-- Card -->
             <div id="booksView" class="row mt-5">
             </div>
+
+
+<!--            分页-->
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#">上一页</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">下一页</a></li>
+                </ul>
+            </nav>
         </div>
     </section>
 
@@ -168,60 +208,60 @@
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <!-- Theme's logo -->
                         <a href="index.html">
-                            <img alt="Image placeholder" src="assets/img/brand/light.svg" id="footer-logo">
+                            <img alt="Image placeholder" src="assets/img/brand/OIP.jpg" id="footer-logo">
                         </a>
                         <!-- Webpixels' mission -->
-                        <p class="mt-4 text-sm opacity-8 pr-lg-4">Webpixels attempts to bring the best development experience to designers and developers by offering the tools needed for having a quick and solid start in most web projects.</p>
+<!--                        <p class="mt-4 text-sm opacity-8 pr-lg-4">Webpixels attempts to bring the best development experience to designers and developers by offering the tools needed for having a quick and solid start in most web projects.</p>-->
                         <!-- Social -->
                         <ul class="nav mt-4">
+<!--                            <li class="nav-item">-->
+<!--                                <a class="nav-link pl-0" href="https://dribbble.com/webpixels" target="_blank">-->
+<!--                                    <i class="fab fa-dribbble"></i>-->
+<!--                                </a>-->
+<!--                            </li>-->
                             <li class="nav-item">
-                                <a class="nav-link pl-0" href="https://dribbble.com/webpixels" target="_blank">
-                                    <i class="fab fa-dribbble"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="https://github.com/webpixels" target="_blank">
+                                <a class="nav-link" href="https://github.com/lastcavespider/WebJAVAcode.git" target="_blank">
                                     <i class="fab fa-github"></i>
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="https://www.instagram.com/webpxs" target="_blank">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="https://www.facebook.com/webpixels" target="_blank">
-                                    <i class="fab fa-facebook"></i>
-                                </a>
-                            </li>
+<!--                            <li class="nav-item">-->
+<!--                                <a class="nav-link" href="https://www.instagram.com/webpxs" target="_blank">-->
+<!--                                    <i class="fab fa-instagram"></i>-->
+<!--                                </a>-->
+<!--                            </li>-->
+<!--                            <li class="nav-item">-->
+<!--                                <a class="nav-link" href="https://www.facebook.com/webpixels" target="_blank">-->
+<!--                                    <i class="fab fa-facebook"></i>-->
+<!--                                </a>-->
+<!--                            </li>-->
                         </ul>
                     </div>
-                    <div class="col-lg-2 col-6 col-sm-4 ml-lg-auto mb-5 mb-lg-0">
-                        <h6 class="heading mb-3">Account</h6>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Profile</a></li>
-                            <li><a href="#">Settings</a></li>
-                            <li><a href="#">Billing</a></li>
-                            <li><a href="#">Notifications</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-2 col-6 col-sm-4 mb-5 mb-lg-0">
-                        <h6 class="heading mb-3">About</h6>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Pricing</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Careers</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-2 col-6 col-sm-4 mb-5 mb-lg-0">
-                        <h6 class="heading mb-3">Company</h6>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Community</a></li>
-                            <li><a href="#">Help center</a></li>
-                            <li><a href="#">Support</a></li>
-                        </ul>
-                    </div>
+<!--                    <div class="col-lg-2 col-6 col-sm-4 ml-lg-auto mb-5 mb-lg-0">-->
+<!--                        <h6 class="heading mb-3">Account</h6>-->
+<!--                        <ul class="list-unstyled">-->
+<!--                            <li><a href="#">Profile</a></li>-->
+<!--                            <li><a href="#">Settings</a></li>-->
+<!--                            <li><a href="#">Billing</a></li>-->
+<!--                            <li><a href="#">Notifications</a></li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                    <div class="col-lg-2 col-6 col-sm-4 mb-5 mb-lg-0">-->
+<!--                        <h6 class="heading mb-3">About</h6>-->
+<!--                        <ul class="list-unstyled">-->
+<!--                            <li><a href="#">Services</a></li>-->
+<!--                            <li><a href="#">Pricing</a></li>-->
+<!--                            <li><a href="#">Contact</a></li>-->
+<!--                            <li><a href="#">Careers</a></li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                    <div class="col-lg-2 col-6 col-sm-4 mb-5 mb-lg-0">-->
+<!--                        <h6 class="heading mb-3">Company</h6>-->
+<!--                        <ul class="list-unstyled">-->
+<!--                            <li><a href="#">Community</a></li>-->
+<!--                            <li><a href="#">Help center</a></li>-->
+<!--                            <li><a href="#">Support</a></li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
                 </div>
                 <hr class="divider divider-fade divider-dark my-4">
                 <div class="row align-items-center justify-content-md-between pb-4">

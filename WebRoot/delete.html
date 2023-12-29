@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>delete</title>
+  <link rel="stylesheet" href="./css/delete.css" />
+</head>
+<body>
+
+
+
+<h1
+        style="
+        text-align: center;
+        color: aliceblue;
+        margin-bottom: 20px;
+        margin-top: 5px;
+        font-size: 300%;
+        font-family: 华文新魏;
+      "
+>
+  账户注销，请谨慎考虑！
+</h1>
+<div class="box">
+  <form autocomplete="off" action="./delete" method="post">
+    <h2>Delete</h2>
+    <div class="inputBox">
+      <input type="text" required="required" name="user" value="Jack" />
+      <span>Username</span>
+      <i></i>
+    </div>
+    <div class="inputBox">
+      <input
+              type="password"
+              required="required"
+              name="pass"
+              value="123456"
+      />
+      <span>Password</span>
+      <i></i>
+    </div>
+    <div class="inputBox">
+      <input type="text" required="required" name="code" />
+      <span>code</span>
+      <i></i>
+    </div>
+    <img src="./code" style="margin-left: 60px" />
+    <div style="text-align: center; margin-top: 10px">
+      <input type="submit" value="Delete" />
+    </div>
+  </form>
+</div>
+<div class="div01">
+  <a href="./login" methods="post">返回登录界面</a>
+</div>
+
+
+</body>
+</html>

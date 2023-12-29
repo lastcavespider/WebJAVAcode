@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>register</title>
+    <link rel="stylesheet" href="./css/register.css" />
+  </head>
+  <body>
+    <h1
+      style="
+        text-align: center;
+        color: aliceblue;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        font-size: 300%;
+        font-family: 华文隶书;
+      "
+    >
+      欢迎注册成为本书城用户
+    </h1>
+    <div class="box">
+      <form autocomplete="off" action="./register" method="post">
+        <h2>Register</h2>
+        <div class="inputBox">
+          <input type="text" required="required" name="user" value="Jack" />
+          <span>Username</span>
+          <i></i>
+        </div>
+        <div class="inputBox">
+          <input
+            type="password"
+            required="required"
+            name="pass1"
+            value="123456"
+          />
+          <span>Password</span>
+          <i></i>
+        </div>
+        <div class="inputBox">
+          <input
+            type="password"
+            required="required"
+            name="pass2"
+            value="123456"
+          />
+          <span>input Password again</span>
+          <i></i>
+        </div>
+        <div class="inputBox">
+          <input type="text" required="required" name="code" />
+          <span>code</span>
+          <i></i>
+        </div>
+        <img src="./code" style="margin-left: 60px" />
+        <div style="text-align: center; margin-top: 10px">
+          <input type="submit" value="Register" />
+
+          <input type="reset" value="clear" name="清空" />
+        </div>
+      </form>
+    </div>
+    <div class="div01">
+      <a href="./login" methods="post">返回登录界面</a>
+    </div>
+  </body>
+</html>

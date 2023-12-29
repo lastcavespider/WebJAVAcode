@@ -1,10 +1,10 @@
-package cn.edu.swu.gyh.common;
+package cn.edu.swu.gyh.shopping;
 
 import cn.edu.swu.gyh.book.Book;
 
 import java.util.List;
 
-public class PageTool {
+public class ShoppingPageTool {
 
 //    private static String template = "<!DOCTYPE html><html lang=\"en\">" +
 //        "<head>  " +
@@ -48,16 +48,16 @@ public class PageTool {
                 <a href="./logout" methods="post">退出系统</a>
             </div>
             <center>
-                <h1 style='color:blue'>欢迎访问SWU网上书城</h1>
+                <h1 style='color:blue'>购物车</h1>
                 <hr>
                 <div style="font-size:16px display:inline-block">
-                 <a href="./ShoppingCart">购&nbsp;物&nbsp;车</a>
+                 
                 &nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="./main">首&nbsp;&nbsp;页</a>
+                <a href="./main">返&nbsp;回&nbsp;首&nbsp;页</a>
                 &nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="./add.html">添&nbsp;&nbsp;加</a></div>
+                
                 <div style="display:inline-block">
-                <form action="./search" method="post">
+                <form action="./CartSearch" method="post">
                 <select name='type'>
                 <option value="name">书 名</option>
                 <option value="author">作 者</option>
@@ -87,9 +87,8 @@ public class PageTool {
         for (Book book : books) {
             table.append(String.format(
                 "<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td><a href='./image/upload/%s' target=_blank><img class='book-pic' src='./image/upload/%s'/></a></td>" +
-                        "<td><a href='./deleteBook?bookId=%s'>删&nbsp;除</a></td>" +
-                        "<td><a href='./updateBook.html?bookId=%s'>修&nbsp;改</a></td>"+
-                        "<td><a href='./Addshopping.html?bookId=%s'>加入<br>购物车</a></td></tr>",
+                        "<td><a href='./deleteBookCart?bookId=%s'>删除</a></td>"
+                        ,
                 book.getId(), book.getName(), book.getAuthor(),
                 book.getPrice(), book.getContent(), book.getPicture(), book.getPicture(),
                 book.getId(), book.getId(), book.getId()
