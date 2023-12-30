@@ -33,8 +33,6 @@ public class LoginServlet extends HttpServlet {
             response.sendRedirect("./admin.html");
             return;
         }
-
-
         boolean star = LoginDao.loginStar(user, pass); //将获取的账号密码传过去，如果账号密码正确就会返回true
         if ( star ) {
             //登陆成功，在session中添加登陆成功的标记

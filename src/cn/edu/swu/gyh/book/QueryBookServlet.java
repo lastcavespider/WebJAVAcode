@@ -23,8 +23,6 @@ public class QueryBookServlet extends HttpServlet {
             ObjectMapper mapper = new ObjectMapper();
             String json = mapper.writeValueAsString(books);
 
-
-
             response.setContentType("application/json");
             response.setCharacterEncoding("UTF-8");
             try(Writer writer = response.getWriter()){

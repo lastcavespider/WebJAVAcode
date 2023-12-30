@@ -27,12 +27,7 @@ public class AuthFilter extends HttpFilter {
     public void doFilter(HttpServletRequest request, HttpServletResponse response, FilterChain chain) throws IOException, ServletException {
         // 放行不需要拦截的资源路径
         String uri = request.getRequestURI();
-//        if (uri.endsWith("admin.html") || uri.endsWith("/login")
-//            || uri.endsWith("png") || uri.endsWith("jpg")
-//            || uri.endsWith(".css") || uri.endsWith(".js")) {
-//            chain.doFilter(request, response);
-//            return;
-//        }
+
         for (String ignoreUrl : this.ignoreUrls) {
             if (uri.endsWith(ignoreUrl)) {
                 chain.doFilter(request, response);
